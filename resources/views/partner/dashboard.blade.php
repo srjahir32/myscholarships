@@ -1,0 +1,1 @@
+<h1> Partner login</h1>
