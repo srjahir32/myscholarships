@@ -1,12 +1,12 @@
 <section class="page_header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4">
                 <div class="logo">
                     <a href=""><img class="logo_img" src="{{ url('assets/img/Logo-white.png') }}" alt=""></a>
                 </div>
             </div>
-            <div class="col-lg-8 col-sm-6">
+            <div class="col-lg-8">
 
                 <nav class=" navbar navbar-expand-lg navbar-light p-0">
 

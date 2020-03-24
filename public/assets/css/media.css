@@ -29,6 +29,43 @@
 
 @media (max-width:767px) {
     .login_form_section {
-    padding: 60px 0 100px;
+        padding: 60px 0 100px;
+    }
+    .navbar-light .navbar-toggler {
+        position: absolute;
+        right: 0;
+        top: -40px;
+    }
+    .logo_img {
+        width: 320px;
+    }
 }
+
+@media (max-width:480px) {
+    .logo_img {
+        width: 270px;
+    }
+    .navbar-light .navbar-toggler {
+        top: -35px;
+        font-size: 1rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+        line-height: 22px;
+        padding-right: 15px;
+    }
+    .navbar-expand-lg .navbar-nav a.nav-link.scholarship_btn {
+        padding: 12px 15px 9px;
+    }
+}
+
+@media (max-width: 380px){
+    .logo_img {
+        width: 230px;
+    }
+    .navbar-light .navbar-toggler {
+        top: -30px;
+        font-size: 12px;
+        padding: 3px 5px;
+    }
 }
