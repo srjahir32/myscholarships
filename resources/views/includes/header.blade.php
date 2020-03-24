@@ -1,12 +1,14 @@
-<section class="header">
+<section class="page_header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <a href=""><img src="{{ url('assets/img/Logo-white.png') }}" alt=""></a>
+            <div class="col-lg-4 col-sm-6">
+                <div class="logo">
+                    <a href=""><img class="logo_img" src="{{ url('assets/img/Logo-white.png') }}" alt=""></a>
+                </div>
             </div>
-            <div class="col-sm-9">
+            <div class="col-lg-8 col-sm-6">
 
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class=" navbar navbar-expand-lg navbar-light p-0">
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -15,34 +17,29 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home </a>
-                            </li>
+                        <ul class=" navbar-nav mr-auto">
                             @if( auth()->check() )
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span
-                                        class="mr-2 d-none d-lg-inline text-gray-600 small">{{ auth()->user()->firstname }}</span>
+                            <li class="nav-item ">
+                                <a class="nav-link " href=""><span>Home</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Logout
-                                    </a>
-                                </div>
                             </li>
                             @else
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ url('login') }}">Login </a>
+                            <li class="nav-item {{ (request()->is('login')) ? 'active' : '' }}">
+                                <a class="nav-link " href="{{ url('login') }}"><span>Login</span></a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ url('user-register') }}">Registration </a>
+                            <li class="nav-item {{ (request()->is('register')) ? 'active' : '' }}">
+                                <a class="nav-link " href="{{ url('register') }}"><span>Register</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  scholarship_btn" href="{{ url('user-register') }}">Submit a
+                                    Scholarship </a>
                             </li>
                             @endif
-
                         </ul>
 
                     </div>

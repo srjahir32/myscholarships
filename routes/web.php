@@ -19,12 +19,13 @@ Route::get('/', function () {
 
 Route::get('login', 'AuthController@index');
 Route::post('post-login', 'AuthController@postLogin'); 
-Route::get('user-register', 'AuthController@userregistration');
+Route::get('student-register', 'AuthController@userregistration');
 Route::get('partner-register', 'AuthController@partnerregistration');
 Route::post('post-registration', 'AuthController@postRegistration'); 
 Route::get('dashboard', 'AuthController@dashboard'); 
 Route::get('logout', 'AuthController@logout');
 
+Route::view('register', 'pages/registration/registration');
 Route::view('admin', 'admin/dashboard')->middleware('admin');
 Route::view('user', 'user/dashboard')->middleware('user');
 Route::view('partner', 'partner/dashboard')->middleware('partner');

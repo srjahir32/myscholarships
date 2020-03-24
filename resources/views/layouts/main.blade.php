@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Myscholarships</title>
+<title>Myscholarships</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -12,13 +12,13 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,900&display=swap"
         rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+        type="text/css" />
     <link rel="stylesheet" type="text/css" href="{{url('assets/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('assets/css/media.css')}}">
 </head>
 
-<body>
+<body class="page_{{substr(strrchr(url()->current(),'/'),1)}} {{$view_name}}">
     @include('includes.header')
     @yield('content')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
