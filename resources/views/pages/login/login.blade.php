@@ -6,7 +6,7 @@
             <div class="col-md-7 slider_text">
                 <div class="login_slider_inner_txt">
                     <h1 class="slider_title">Welcome to Myscholarships.ng</h1>
-                    <p class="slider_btm_txt mb-sm-5">
+                    <p class="slider_btm_txt">
                     Myscholarship.ng is a premium online scholarship matching platform that uses mobile and web-based technologies to help students find free money for school. Join our platform today to start finding free money.
                     </p>
                 </div>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 text-center">
+                                <div class="col-md-12 mt-2 text-center">
                                     <button id="submit" type="submit" class="btn form-btn">LOGIN <img class="login_btn_img" src="{{ url('assets/img/login/arrow.png') }}" alt=""></button>
                                     <!-- <p> <a class="small" href="{{url('registration')}}">Create an Account!</a></small> -->
                                 </div>

@@ -1,1 +1,4 @@
-<h1> User login</h1>
+@extends('layouts.main')
+@section('content')
+    <h1> Users login</h1>
+@endsection

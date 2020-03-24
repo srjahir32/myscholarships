@@ -4,29 +4,36 @@ body {
     font-family: 'Poppins';
 
 }
+
 p {
     font-size: 16px;
     line-height: 26px;
 }
+
 ul li {
     list-style: none;
 }
+
 a:hover {
     text-decoration: none;
 }
-.themecolor{
-    color: #a223f1; 
+
+.themecolor {
+    color: #a223f1;
 }
+
 .error {
     color: #dc3545;
     font-size: 15px;
     letter-spacing: 0.3px;
 }
-.mrgin-auto{
+
+.mrgin-auto {
     display: block;
     margin: auto;
     float: none;
 }
+
 /* / Optional: show position indicator in red / */
 
 button:focus {
@@ -42,24 +49,21 @@ button:focus {
 /* section.page_header {
     background: #ccc;
 } */
-/* login page css */
+/****************** headercss ******************/
 .page_header {
     padding: 35px 0;
 }
-.page_login, .page_register  {
-    background: url(../../assets/img/login/slider_bg.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .logo_img {
     width: 100%;
 }
+
 .navbar {
     display: block;
     text-align: right;
     float: right;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     text-transform: uppercase;
@@ -69,13 +73,16 @@ button:focus {
     padding-right: 30px;
     padding-top: 13px;
 }
-.navbar-light .navbar-nav .nav-link:hover{
+
+.navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
 }
-.navbar-nav .nav-item.active .nav-link span{
+
+.navbar-nav .nav-item.active .nav-link span {
     border-bottom: 1px solid #fff;
     color: #fff;
 }
+
 .navbar-expand-lg .navbar-nav a.nav-link.scholarship_btn {
     color: #a223f1;
     background: #fff;
@@ -84,12 +91,26 @@ button:focus {
     font-weight: 500;
 }
 
+/**************** headercss end*****************/
+
+
+/**************** login page css ****************/
+.page_login,
+.page_register {
+    background: url(../../assets/img/login/slider_bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .login_form_section {
     padding: 120px 0;
 }
+
 .login_slider_inner_txt {
     color: #fff;
 }
+
 .slider_title {
     text-transform: uppercase;
     font-size: 53px;
@@ -98,21 +119,25 @@ button:focus {
     line-height: 60px;
     word-break: break-word;
 }
+
 .slider_btm_txt {
     font-size: 19px;
     line-height: 28px;
     font-weight: 400;
     padding-top: 5px;
 }
+
 .slider_text {
     padding-right: 6%;
 }
+
 .login_form {
     padding: 25px 40px 15px;
     background: #ffffff;
     text-align: center;
     border-radius: 8px;
 }
+
 .form_title {
     font-weight: bold;
     text-transform: uppercase;
@@ -120,12 +145,15 @@ button:focus {
     font-size: 34px;
     line-height: 40px;
 }
-.form_subtitle{
+
+.form_subtitle {
     font-size: 19px;
 }
+
 .login_form .form-group {
     margin-bottom: 12px;
 }
+
 .login_form .form-control {
     border-style: solid;
     border-width: 1.5px;
@@ -135,7 +163,7 @@ button:focus {
     height: 55px;
     padding: 20px;
     color: #bfbfbf;
-    
+
 }
 
 .login_form .form-control::placeholder {
@@ -143,6 +171,7 @@ button:focus {
     text-transform: uppercase;
     font-weight: 500;
 }
+
 .form-btn {
     width: 100%;
     padding: 11px;
@@ -151,6 +180,7 @@ button:focus {
     background: #a223f1;
     color: #fff;
 }
+
 .form-btn:hover {
     color: #fff;
     background: #b237fe;
@@ -161,13 +191,15 @@ button:focus {
     margin-left: 5px;
     margin-top: -3px;
 }
-/* login page css end*/
 
-/* checkbox css */
+/**************** login page css end ****************/
+
+/**************** custom checkbox css ****************/
 /* The checkbox_label */
-.checkbox_label a{
+.checkbox_label a {
     text-decoration: underline;
 }
+
 .checkbox_label {
     display: block;
     position: relative;
@@ -182,19 +214,19 @@ button:focus {
     font-size: 15px;
     font-weight: 500;
     color: #cbcbcb;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .checkbox_label input {
+}
+
+/* Hide the browser's default checkbox */
+.checkbox_label input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 4px;
     left: 0;
@@ -202,34 +234,34 @@ button:focus {
     width: 18px;
     background-color: #fff;
     border: 1.5px solid #edcfff;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbox_label:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_label:hover input~.checkmark {
     background-color: #fff;
     border: 1.5px solid #edcfff;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkbox_label input:checked ~ .checkmark {
-    background-color: #a223f1; 
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_label input:checked~.checkmark {
+    background-color: #a223f1;
     border: 1.5px solid #a223f1;
 }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkbox_label input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.checkbox_label input:checked~.checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkbox_label .checkmark:after {
+}
+
+/* Style the checkmark/indicator */
+.checkbox_label .checkmark:after {
     left: 5px;
     top: -0.5px;
     width: 6px;
@@ -239,15 +271,91 @@ button:focus {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-/* checkbox css end */
+}
 
-/* registration page css */
+/*************** custom checkbox css end ***************/
+
+/*************** registration page css ***************/
 .registration_form_section {
     padding: 80px 0;
 }
+
 .registration_form_section .slider_text {
     padding-top: 5%;
     padding-right: 6%;
 }
-/* registration page css end*/
+
+/************** registration page css end************/
+
+
+/**************** footer css ****************/
+.page_footer {
+    background: #fff;
+}
+.footer_top{
+    padding: 65px 0 45px;
+}
+.foter_logo_img {
+    width: 85%;
+}
+.footer_logo_txt{
+    padding-right: 2.5%;
+}
+.footer_txt {
+    font-size: 14px;
+    padding-top: 10px;
+    color: #8c8b8b;
+}
+.footer_heading {
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer_links, .contact_info_txt p {
+    font-size: 14.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+}
+.footer_links {
+    padding-left: 2.5%;
+}
+.footer_link_list {
+    color: #4f4f4f;
+}
+.footer_link_list li {
+    margin-bottom: 15px;
+}
+.contact_list {
+    position: relative;
+    padding-left: 45px;
+}
+.contact_info_img {
+    position: absolute;
+    margin-left: -45px;
+    width: 32px;
+}
+ul.follow_us_link li {
+    display: inline;
+    margin: 0 5px;
+}
+.follow_us_link li img {
+    width: 45px;
+}
+.fborder {
+    border-bottom: 1px solid #d1d1d1;
+}
+p.copy_right_txt {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #9f9f9f;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+/************* footer css end****************/
